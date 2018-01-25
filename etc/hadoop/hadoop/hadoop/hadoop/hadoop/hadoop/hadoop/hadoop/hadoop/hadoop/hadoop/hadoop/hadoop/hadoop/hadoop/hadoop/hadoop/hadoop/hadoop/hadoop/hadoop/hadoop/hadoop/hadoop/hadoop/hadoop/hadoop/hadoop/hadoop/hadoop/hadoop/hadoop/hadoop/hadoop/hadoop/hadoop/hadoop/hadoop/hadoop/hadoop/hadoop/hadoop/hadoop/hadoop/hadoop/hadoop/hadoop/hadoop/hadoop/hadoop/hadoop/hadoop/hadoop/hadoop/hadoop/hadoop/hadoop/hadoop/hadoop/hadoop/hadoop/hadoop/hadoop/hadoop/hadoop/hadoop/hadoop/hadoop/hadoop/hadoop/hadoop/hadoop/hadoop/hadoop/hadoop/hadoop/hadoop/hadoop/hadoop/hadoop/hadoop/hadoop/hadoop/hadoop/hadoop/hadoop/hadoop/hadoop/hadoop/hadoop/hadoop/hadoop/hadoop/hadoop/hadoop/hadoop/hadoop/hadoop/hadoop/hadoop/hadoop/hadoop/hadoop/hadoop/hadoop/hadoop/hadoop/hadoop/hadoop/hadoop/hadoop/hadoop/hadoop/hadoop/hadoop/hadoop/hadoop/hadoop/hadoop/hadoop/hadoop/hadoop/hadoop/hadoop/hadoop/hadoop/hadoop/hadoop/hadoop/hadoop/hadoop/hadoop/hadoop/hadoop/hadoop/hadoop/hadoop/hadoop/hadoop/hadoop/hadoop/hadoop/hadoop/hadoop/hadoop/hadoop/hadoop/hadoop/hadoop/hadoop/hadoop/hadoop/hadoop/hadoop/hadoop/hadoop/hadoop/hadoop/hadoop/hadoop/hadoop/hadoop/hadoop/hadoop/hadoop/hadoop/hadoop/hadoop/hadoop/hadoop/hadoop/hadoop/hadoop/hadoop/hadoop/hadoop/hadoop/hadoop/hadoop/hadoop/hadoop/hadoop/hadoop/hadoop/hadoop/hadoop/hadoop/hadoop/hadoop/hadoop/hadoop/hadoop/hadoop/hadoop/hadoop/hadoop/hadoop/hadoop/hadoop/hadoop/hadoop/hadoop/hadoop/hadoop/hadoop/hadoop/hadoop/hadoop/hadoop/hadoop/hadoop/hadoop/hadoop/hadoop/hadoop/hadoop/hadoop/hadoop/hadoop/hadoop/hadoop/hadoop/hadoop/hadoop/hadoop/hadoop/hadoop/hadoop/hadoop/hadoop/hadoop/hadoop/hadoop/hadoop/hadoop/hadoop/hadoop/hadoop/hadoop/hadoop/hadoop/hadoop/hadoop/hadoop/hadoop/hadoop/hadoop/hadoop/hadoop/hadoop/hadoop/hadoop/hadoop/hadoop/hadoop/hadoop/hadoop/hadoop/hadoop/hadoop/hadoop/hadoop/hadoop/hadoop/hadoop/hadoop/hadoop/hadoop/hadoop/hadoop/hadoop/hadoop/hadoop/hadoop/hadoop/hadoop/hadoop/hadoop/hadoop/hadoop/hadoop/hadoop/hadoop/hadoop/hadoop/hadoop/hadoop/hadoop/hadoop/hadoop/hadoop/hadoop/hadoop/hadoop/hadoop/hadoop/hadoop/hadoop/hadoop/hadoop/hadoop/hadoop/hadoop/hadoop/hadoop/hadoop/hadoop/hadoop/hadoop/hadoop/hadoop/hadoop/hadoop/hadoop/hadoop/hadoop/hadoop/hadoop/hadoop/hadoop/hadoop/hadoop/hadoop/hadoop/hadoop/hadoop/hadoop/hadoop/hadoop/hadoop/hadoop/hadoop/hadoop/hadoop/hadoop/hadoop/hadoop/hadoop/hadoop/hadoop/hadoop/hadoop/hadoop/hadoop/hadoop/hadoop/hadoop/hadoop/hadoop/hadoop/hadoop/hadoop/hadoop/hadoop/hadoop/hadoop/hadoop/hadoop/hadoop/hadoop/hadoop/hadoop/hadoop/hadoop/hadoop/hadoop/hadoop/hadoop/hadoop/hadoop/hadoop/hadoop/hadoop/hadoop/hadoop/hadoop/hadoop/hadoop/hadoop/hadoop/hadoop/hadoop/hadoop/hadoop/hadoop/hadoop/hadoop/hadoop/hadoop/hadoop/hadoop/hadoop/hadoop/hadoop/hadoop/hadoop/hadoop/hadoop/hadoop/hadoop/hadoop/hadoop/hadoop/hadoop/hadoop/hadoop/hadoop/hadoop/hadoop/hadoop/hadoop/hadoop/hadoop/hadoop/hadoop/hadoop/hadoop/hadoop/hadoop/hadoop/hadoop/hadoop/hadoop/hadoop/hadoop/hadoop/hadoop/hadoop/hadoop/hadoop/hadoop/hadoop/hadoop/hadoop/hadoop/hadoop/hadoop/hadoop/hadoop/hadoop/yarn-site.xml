@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+
+<!--    <property>
+       <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+       <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+     </property>-->
+
+    <property>
+	<name>yarn.resourcemanager.hostname</name>
+	<value>master</value>
+    </property>
+    <property>
+	<name>yarn.resourcemanager.scheduler.address</name>
+	<value>${yarn.resourcemanager.hostname}:8030</value>
+    </property>
+    <property>
+	<name>yarn.resourcemanager.resource-tracker.address</name>
+	<value>${yarn.resourcemanager.hostname}:8031</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.admin.address</name>
+        <value>master:8033</value>
+    </property>
+
+    <property>
+        <name>yarn.system-metrics-publisher.enabled</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.env-whitelist</name>
+        <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.resource-tracker.address</name>
+        <value>master:8031</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>26384</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.resource.cpu-vcores</name>
+        <value>16</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.resource.io-spindles</name>
+        <value>2.0</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.scheduler.class</name>
+	<value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+	<!--<value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>-->
+    </property>
+
+    <property>
+        <name>yarn.scheduler.minimum-allocation-mb</name>
+        <value>16</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>26384</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.minimum-allocation-vcores</name>
+        <value>1</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.maximum-allocation-vcores</name>
+        <value>16</value>
+    </property>
+
+     <property>
+	    <name>yarn.nodemanager.aux-services</name>
+	    <value>mapreduce_shuffle</value>
+      </property>
+      <property>
+	    <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+	    <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+      </property>
+
+<!-- ###################  QUEUE ####################" -->
+
+
+     <property>
+         <name>yarn.scheduler.capacity.root.queues</name>
+         <value>queueA</value>
+     </property>
+      <property>
+         <name>yarn.scheduler.capacity.root.queueA.capacity</name>
+         <value>100</value>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.queueA.capacity</name>
+     <value>85</value>
+   </property>
+ <property>
+     <name>yarn.scheduler.capacity.queueA.capacity.maximun-capacity</name>
+     <value>90</value>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.queueA.minimum-user-limit-percent</name>
+     <value>1</value>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.queueA.maximum-allocation-mb</name>
+     <value>26384</value>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.queueA.minimum-user-limit-percent</name>
+     <value>1</value>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
+     <value>100</value>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.maximum-applications</name>
+     <value>100000</value>
+  </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.queueA.state</name>
+     <value>RUNNING</value>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.root.queueA.acl_submit_applications</name>
+     <value>root</value>
+   </property>
+
+  <property>
+     <name>yarn.scheduler.capacity.root.queueA.acl_administer_queue</name>
+     <value>root</value>
+   </property>
+
+
+ <property>
+   <name>yarn.scheduler.capacity.queue-mappings</name>
+   <value>u:root:queueA,g:supergroup:queueA</value>
+ </property>
+
+</configuration>

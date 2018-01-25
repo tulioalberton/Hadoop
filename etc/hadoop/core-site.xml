@@ -23,7 +23,7 @@
     </property>
     <property>
         <name>io.file.buffer.size</name>
-        <value>132000</value>
+        <value>1048576</value>
     </property>    
     <property>
         <name>fs.local.block.size</name>

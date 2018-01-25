@@ -65,21 +65,21 @@ export HADOOP_HOME=/opt/hadoop-3.0.0
 # /etc/profile.d or equivalent.  Some options (such as
 # --config) may react strangely otherwise.
 #
-#export HADOOP_CONF_DIR=${HADOOP_HOME}/etc/hadoop
+export HADOOP_CONF_DIR=${HADOOP_HOME}/etc/hadoop
 
 # The maximum amount of heap to use (Java -Xmx).  If no unit
 # is provided, it will be converted to MB.  Daemons will
 # prefer any Xmx setting in their respective _OPT variable.
 # There is no default; the JVM will autoscale based upon machine
 # memory size.
-# export HADOOP_HEAPSIZE_MAX=
+export HADOOP_HEAPSIZE_MAX=16G
 
 # The minimum amount of heap to use (Java -Xms).  If no unit
 # is provided, it will be converted to MB.  Daemons will
 # prefer any Xms setting in their respective _OPT variable.
 # There is no default; the JVM will autoscale based upon machine
 # memory size.
-# export HADOOP_HEAPSIZE_MIN=
+export HADOOP_HEAPSIZE_MIN=1G
 
 # Enable extra debugging of Hadoop's JAAS binding, used to set up
 # Kerberos security.
@@ -136,23 +136,23 @@ esac
 # Similarly, end users should utilize ${HOME}/.hadooprc .
 # This variable should ideally only be used as a short-cut,
 # interactive way for temporary additions on the command line.
-# export HADOOP_CLASSPATH="/some/cool/path/on/your/machine"
+#export HADOOP_CLASSPATH="/opt/hadoop-3.0.0/lib"
 
 # Should HADOOP_CLASSPATH be first in the official CLASSPATH?
-# export HADOOP_USER_CLASSPATH_FIRST="yes"
+#export HADOOP_USER_CLASSPATH_FIRST="yes"
 
 # If HADOOP_USE_CLIENT_CLASSLOADER is set, the classpath along
 # with the main jar are handled by a separate isolated
 # client classloader when 'hadoop jar', 'yarn jar', or 'mapred job'
 # is utilized. If it is set, HADOOP_CLASSPATH and
 # HADOOP_USER_CLASSPATH_FIRST are ignored.
-# export HADOOP_USE_CLIENT_CLASSLOADER=true
+export HADOOP_USE_CLIENT_CLASSLOADER=true
 
 # HADOOP_CLIENT_CLASSLOADER_SYSTEM_CLASSES overrides the default definition of
 # system classes for the client classloader when HADOOP_USE_CLIENT_CLASSLOADER
 # is enabled. Names ending in '.' (period) are treated as package names, and
 # names starting with a '-' are treated as negative matches. For example,
-# export HADOOP_CLIENT_CLASSLOADER_SYSTEM_CLASSES="-org.apache.hadoop.UserClass,java.,javax.,org.apache.hadoop."
+export HADOOP_CLIENT_CLASSLOADER_SYSTEM_CLASSES="-org.apache.hadoop.UserClass,java.,javax.,org.apache.hadoop."
 
 # Enable optional, bundled Hadoop features
 # This is a comma delimited list.  It may NOT be overridden via .hadooprc
@@ -178,7 +178,7 @@ esac
 
 # Filename which contains all of the hosts for any remote execution
 # helper scripts # such as workers.sh, start-dfs.sh, etc.
-# export HADOOP_WORKERS="${HADOOP_CONF_DIR}/workers"
+#export HADOOP_WORKERS="${HADOOP_CONF_DIR}/workers"
 
 ###
 # Options for all daemons
@@ -213,12 +213,12 @@ export HADOOP_PID_DIR=/tmp
 # Default log4j setting for interactive commands
 # Java property: hadoop.root.logger
 # export HADOOP_ROOT_LOGGER=INFO,console
- export HADOOP_ROOT_LOGGER=INFO,console
+export HADOOP_ROOT_LOGGER=INFO,console
 
 # Default log4j setting for daemons spawned explicitly by
 # --daemon option of hadoop, hdfs, mapred and yarn command.
 # Java property: hadoop.root.logger
-# export HADOOP_DAEMON_ROOT_LOGGER=INFO,RFA
+export HADOOP_DAEMON_ROOT_LOGGER=INFO,RFA
 
 # Default log level and output location for security-related messages.
 # You will almost certainly want to change this on a per-daemon basis via
@@ -301,8 +301,7 @@ export HADOOP_PID_DIR=/tmp
 # export HDFS_NAMENODE_OPTS="-verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -Xloggc:${HADOOP_LOG_DIR}/gc-rm.log-$(date +'%Y%m%d%H%M')"
 
 # this is the default:
-#export HDFS_NAMENODE_OPTS="-Dhadoop.security.logger=INFO,RFAS"
-export HDFS_NAMENODE_OPTS="-Dhadoop.security.logger=INFO"
+export HDFS_NAMENODE_OPTS="-Dhadoop.security.logger=INFO,RFAS"
 
 
 

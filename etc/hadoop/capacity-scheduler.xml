@@ -15,7 +15,7 @@
 
   <property>
     <name>yarn.scheduler.capacity.maximum-applications</name>
-    <value>10000</value>
+    <value>64</value>
     <description>
       Maximum number of applications that can be pending and running.
     </description>
@@ -23,7 +23,7 @@
 
   <property>
     <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
-    <value>0.1</value>
+    <value>100</value>
     <description>
       Maximum percent of resources in the cluster which can be used to run 
       application masters i.e. controls number of concurrent running
@@ -33,7 +33,7 @@
 
   <property>
     <name>yarn.scheduler.capacity.resource-calculator</name>
-    <value>org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator</value>
+    <value>org.apache.hadoop.yarn.util.resource.DominantResourceCalculator</value>
     <description>
       The ResourceCalculator implementation to be used to compare 
       Resources in the scheduler.
@@ -45,20 +45,20 @@
 
   <property>
     <name>yarn.scheduler.capacity.root.queues</name>
-    <value>default</value>
+    <value>queueA</value>
     <description>
       The queues at the this level (root is the root queue).
     </description>
   </property>
 
   <property>
-    <name>yarn.scheduler.capacity.root.default.capacity</name>
+    <name>yarn.scheduler.capacity.root.queueA.capacity</name>
     <value>100</value>
     <description>Default queue target capacity.</description>
   </property>
 
   <property>
-    <name>yarn.scheduler.capacity.root.default.user-limit-factor</name>
+    <name>yarn.scheduler.capacity.root.queueA.user-limit-factor</name>
     <value>1</value>
     <description>
       Default queue user limit a percentage from 0.0 to 1.0.
@@ -66,7 +66,7 @@
   </property>
 
   <property>
-    <name>yarn.scheduler.capacity.root.default.maximum-capacity</name>
+    <name>yarn.scheduler.capacity.root.queueA.maximum-capacity</name>
     <value>100</value>
     <description>
       The maximum capacity of the default queue. 
@@ -74,7 +74,7 @@
   </property>
 
   <property>
-    <name>yarn.scheduler.capacity.root.default.state</name>
+    <name>yarn.scheduler.capacity.root.queueA.state</name>
     <value>RUNNING</value>
     <description>
       The state of the default queue. State can be one of RUNNING or STOPPED.
@@ -82,7 +82,7 @@
   </property>
 
   <property>
-    <name>yarn.scheduler.capacity.root.default.acl_submit_applications</name>
+    <name>yarn.scheduler.capacity.root.queueA.acl_submit_applications</name>
     <value>*</value>
     <description>
       The ACL of who can submit jobs to the default queue.
@@ -90,7 +90,7 @@
   </property>
 
   <property>
-    <name>yarn.scheduler.capacity.root.default.acl_administer_queue</name>
+    <name>yarn.scheduler.capacity.root.queueA.acl_administer_queue</name>
     <value>*</value>
     <description>
       The ACL of who can administer jobs on the default queue.
@@ -98,7 +98,7 @@
   </property>
 
   <property>
-    <name>yarn.scheduler.capacity.root.default.acl_application_max_priority</name>
+    <name>yarn.scheduler.capacity.root.queueA.acl_application_max_priority</name>
     <value>*</value>
     <description>
       The ACL of who can submit applications with configured priority.
@@ -107,7 +107,7 @@
   </property>
 
    <property>
-     <name>yarn.scheduler.capacity.root.default.maximum-application-lifetime
+     <name>yarn.scheduler.capacity.root.queueA.maximum-application-lifetime
      </name>
      <value>-1</value>
      <description>
@@ -127,7 +127,7 @@
    </property>
 
    <property>
-     <name>yarn.scheduler.capacity.root.default.default-application-lifetime
+     <name>yarn.scheduler.capacity.root.queueA.default-application-lifetime
      </name>
      <value>-1</value>
      <description>
@@ -143,7 +143,7 @@
 
   <property>
     <name>yarn.scheduler.capacity.node-locality-delay</name>
-    <value>40</value>
+    <value>4</value>
     <description>
       Number of missed scheduling opportunities after which the CapacityScheduler 
       attempts to schedule rack-local containers.
@@ -172,7 +172,7 @@
 
   <property>
     <name>yarn.scheduler.capacity.queue-mappings</name>
-    <value></value>
+    <value>u:root:queueA,g:supergroup:queueA</value>
     <description>
       A list of mappings that will be used to assign jobs to queues
       The syntax for this list is [u|g]:[name]:[queue_name][,next mapping]*
@@ -195,7 +195,7 @@
 
   <property>
     <name>yarn.scheduler.capacity.per-node-heartbeat.maximum-offswitch-assignments</name>
-    <value>1</value>
+    <value>128</value>
     <description>
       Controls the number of OFF_SWITCH assignments allowed
       during a node's heartbeat. Increasing this value can improve

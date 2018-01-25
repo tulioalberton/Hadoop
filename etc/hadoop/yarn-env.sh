@@ -34,7 +34,7 @@
 # This value will be overridden by an Xmx setting specified in either
 # HADOOP_OPTS and/or YARN_RESOURCEMANAGER_OPTS.
 # Default is the same as HADOOP_HEAPSIZE_MAX
-#export YARN_RESOURCEMANAGER_HEAPSIZE=
+#export YARN_RESOURCEMANAGER_HEAPSIZE=128
 
 # Specify the JVM options to be used when starting the ResourceManager.
 # These options will be appended to the options specified as HADOOP_OPTS
@@ -42,7 +42,7 @@
 #
 # Examples for a Sun/Oracle JDK:
 # a) override the appsummary log file:
-# export YARN_RESOURCEMANAGER_OPTS="-Dyarn.server.resourcemanager.appsummary.log.file=rm-appsummary.log -Dyarn.server.resourcemanager.appsummary.logger=INFO,RMSUMMARY"
+export YARN_RESOURCEMANAGER_OPTS="-Dyarn.server.resourcemanager.appsummary.log.file=rm-appsummary.log -Dyarn.server.resourcemanager.appsummary.logger=INFO,RMSUMMARY"
 #
 # b) Set JMX options
 # export YARN_RESOURCEMANAGER_OPTS="-Dcom.sun.management.jmxremote=true -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.port=1026"
