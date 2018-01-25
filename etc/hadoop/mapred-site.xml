@@ -22,30 +22,40 @@
         <value>yarn</value>
     </property>
 
+   <property>
+        <name>mapreduce.jobhistory.address</name>
+        <value>master:10020</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobhistory.webapp.address</name>
+        <value>master:19888</value>
+    </property>
+
     <property>
         <name>mapreduce.task.timeout</name>
         <value>600000</value>
     </property>
 
-    <property>
-        <name>mapreduce.map.maxattempts</name>
-        <value>8</value>
-    </property>
+<!--    <property>
+        <name>mapreduce.task.skip.start.attempts</name>
+        <value>10</value>
+    </property>  -->
 
     <property>
-        <name>mapreduce.reduce.maxattempts</name>
-        <value>8</value>
-    </property>
+        <name>mapreduce.am.max-attempts</name>
+        <value>10</value>
+    </property>  
 
     <property>
         <name>mapreduce.input.fileinputformat.split.maxsize</name>
-        <!--<value>268435456</value>-->
-	<value>536870912</value>
+        <value>268435456</value>
+	<!--<value>536870912</value>-->
     </property>
 
     <property>
         <name>mapreduce.job.maxtaskfailures.per.tracker</name>
-        <value>16</value>
+        <value>10</value>
     </property>
 
     <property>
@@ -65,12 +75,12 @@
 
     <property>
         <name>mapreduce.job.reduce.slowstart.completedmaps</name>
-        <value>0.15</value>
+        <value>0.75</value>
     </property>
 
     <property>
         <name>mapreduce.client.output.filter</name>
-        <value>ALL</value>
+        <value>FAILED</value>
     </property>
 
     <property>
@@ -94,27 +104,32 @@
     </property>
 
 
-
 <!-- MAP -->
     <property>
         <name>mapreduce.map.resource.memory-mb</name>
-        <value>13312</value>
+        <value>2048</value>
     </property>
 
     <property>
         <name>mapreduce.map.resource.vcores</name>
-        <value>16</value>
+        <value>1</value>
     </property>
+
+    <property>
+        <name>mapred.child.java.opts</name>
+        <value>-Xmx372m</value>
+    </property>
+
 
 <!-- REDUCE -->
     <property>
         <name>mapreduce.reduce.resource.memory-mb</name>
-        <value>3072</value>
+        <value>2048</value>
     </property>
 
     <property>
         <name>mapreduce.reduce.resource.vcores</name>
-        <value>8</value>
+        <value>1</value>
     </property>
 
     <property>
@@ -122,47 +137,29 @@
         <value>8</value>
     </property>
 
-    <property>
-        <name>mapreduce.jobhistory.address</name>
-        <value>master:10020</value>
-    </property>
-
-    <property>
-        <name>mapreduce.jobhistory.webapp.address</name>
-        <value>master:19888</value>
-    </property>
 
     <property>
         <name>mapreduce.jobtracker.instrumentation</name>
         <value>org.apache.hadoop.mapred.JobTrackerMetricsInst</value>
     </property>
 
-<!-- JOB -->
-
-<!--    <property> 
-        <name>mapreduce.job.maps</name>
-        <value>32</value>
-    </property>
-
     <property>
-        <name>mapreduce.job.reduces</name>
+        <name>mapreduce.jobhistory.client.thread-count</name>
         <value>16</value>
     </property>
 
     <property>
-        <name>mapreduce.job.running.map.limit</name>
-        <value>-1</value>
+        <name>mapreduce.jobhistory.loadedjob.tasks.max</name>
+        <value>64</value>
     </property>
 
     <property>
-        <name>mapreduce.job.running.reduce.limit</name>
-        <value>-1</value>
+        <name>mapreduce.map.log.level</name>
+        <value>DEBUG</value>
     </property>
-
     <property>
-        <name>mapreduce.job.max.map</name>
-        <value>-1</value>
+        <name>mapreduce.reduce.log.level</name>
+        <value>DEBUG</value>
     </property>
 
--->
 </configuration>

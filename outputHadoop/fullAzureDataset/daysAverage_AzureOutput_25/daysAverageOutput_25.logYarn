@@ -1,0 +1,715 @@
+ time yarn --hosts workers jar BigDataProject/DaysAverage.jar /azure /daysAverage_AzureOutput_25
+2018-01-25 03:55:51,989 INFO util.ApplicationClassLoader: classpath: [file:/tmp/hadoop-unjar3681186169187380087/, file:/opt/hadoop-3.0.0/BigDataProject/DaysAverage.jar]
+2018-01-25 03:55:51,990 INFO util.ApplicationClassLoader: system classes: [-org.apache.hadoop.UserClass, java., javax., org.apache.hadoop.]
+2018-01-25 03:55:53,329 INFO client.RMProxy: Connecting to ResourceManager at master/192.168.3.31:8032
+2018-01-25 03:55:54,112 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-01-25 03:55:54,142 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1516851641598_0011
+2018-01-25 03:55:54,607 INFO input.FileInputFormat: Total input files to process : 125
+2018-01-25 03:55:54,790 INFO mapreduce.JobSubmitter: number of splits:499
+2018-01-25 03:55:54,867 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2018-01-25 03:55:55,022 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1516851641598_0011
+2018-01-25 03:55:55,026 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2018-01-25 03:55:55,324 INFO conf.Configuration: resource-types.xml not found
+2018-01-25 03:55:55,325 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2018-01-25 03:55:55,420 INFO impl.YarnClientImpl: Submitted application application_1516851641598_0011
+2018-01-25 03:55:55,477 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1516851641598_0011/
+2018-01-25 03:55:55,478 INFO mapreduce.Job: Running job: job_1516851641598_0011
+2018-01-25 03:56:03,660 INFO mapreduce.Job: Job job_1516851641598_0011 running in uber mode : false
+2018-01-25 03:56:03,662 INFO mapreduce.Job:  map 0% reduce 0%
+2018-01-25 03:56:15,803 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000006_0, Status : SUCCEEDED
+2018-01-25 03:56:15,804 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000188_0, Status : SUCCEEDED
+2018-01-25 03:56:16,815 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000000_0, Status : SUCCEEDED
+2018-01-25 03:56:17,821 INFO mapreduce.Job:  map 1% reduce 0%
+2018-01-25 03:56:26,893 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000007_0, Status : SUCCEEDED
+2018-01-25 03:56:27,901 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000189_0, Status : SUCCEEDED
+2018-01-25 03:56:28,908 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000001_0, Status : SUCCEEDED
+2018-01-25 03:56:37,965 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000008_0, Status : SUCCEEDED
+2018-01-25 03:56:39,978 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000190_0, Status : SUCCEEDED
+2018-01-25 03:56:40,983 INFO mapreduce.Job:  map 2% reduce 0%
+2018-01-25 03:56:40,985 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000002_0, Status : SUCCEEDED
+2018-01-25 03:56:49,032 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000009_0, Status : SUCCEEDED
+2018-01-25 03:56:52,048 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000191_0, Status : SUCCEEDED
+2018-01-25 03:56:53,054 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000003_0, Status : SUCCEEDED
+2018-01-25 03:57:00,097 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000010_0, Status : SUCCEEDED
+2018-01-25 03:57:01,101 INFO mapreduce.Job:  map 3% reduce 0%
+2018-01-25 03:57:04,120 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000192_0, Status : SUCCEEDED
+2018-01-25 03:57:05,125 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000004_0, Status : SUCCEEDED
+2018-01-25 03:57:11,162 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000011_0, Status : SUCCEEDED
+2018-01-25 03:57:16,188 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000193_0, Status : SUCCEEDED
+2018-01-25 03:57:17,194 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000005_0, Status : SUCCEEDED
+2018-01-25 03:57:18,198 INFO mapreduce.Job:  map 4% reduce 0%
+2018-01-25 03:57:22,222 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000012_0, Status : SUCCEEDED
+2018-01-25 03:57:27,249 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000194_0, Status : SUCCEEDED
+2018-01-25 03:57:29,260 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000036_0, Status : SUCCEEDED
+2018-01-25 03:57:33,281 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000013_0, Status : SUCCEEDED
+2018-01-25 03:57:38,306 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000195_0, Status : SUCCEEDED
+2018-01-25 03:57:39,309 INFO mapreduce.Job:  map 5% reduce 0%
+2018-01-25 03:57:41,320 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000037_0, Status : SUCCEEDED
+2018-01-25 03:57:45,340 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000014_0, Status : SUCCEEDED
+2018-01-25 03:57:50,367 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000196_0, Status : SUCCEEDED
+2018-01-25 03:57:54,387 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000038_0, Status : SUCCEEDED
+2018-01-25 03:57:55,392 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000015_0, Status : SUCCEEDED
+2018-01-25 03:57:56,395 INFO mapreduce.Job:  map 6% reduce 0%
+2018-01-25 03:58:02,425 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000197_0, Status : SUCCEEDED
+2018-01-25 03:58:05,440 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000069_0, Status : SUCCEEDED
+2018-01-25 03:58:06,445 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000016_0, Status : SUCCEEDED
+2018-01-25 03:58:14,491 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000198_0, Status : SUCCEEDED
+2018-01-25 03:58:17,505 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000017_0, Status : SUCCEEDED
+2018-01-25 03:58:17,505 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000070_0, Status : SUCCEEDED
+2018-01-25 03:58:18,508 INFO mapreduce.Job:  map 7% reduce 0%
+2018-01-25 03:58:26,545 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000199_0, Status : SUCCEEDED
+2018-01-25 03:58:28,554 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000018_0, Status : SUCCEEDED
+2018-01-25 03:58:28,554 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000071_0, Status : SUCCEEDED
+2018-01-25 03:58:37,594 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000200_0, Status : SUCCEEDED
+2018-01-25 03:58:38,597 INFO mapreduce.Job:  map 8% reduce 0%
+2018-01-25 03:58:40,608 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000019_0, Status : SUCCEEDED
+2018-01-25 03:58:41,613 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000089_0, Status : SUCCEEDED
+2018-01-25 03:58:49,647 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000201_0, Status : SUCCEEDED
+2018-01-25 03:58:50,651 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000020_0, Status : SUCCEEDED
+2018-01-25 03:58:55,674 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000090_0, Status : SUCCEEDED
+2018-01-25 03:58:56,677 INFO mapreduce.Job:  map 9% reduce 0%
+2018-01-25 03:59:00,694 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000202_0, Status : SUCCEEDED
+2018-01-25 03:59:02,703 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000021_0, Status : SUCCEEDED
+2018-01-25 03:59:06,720 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000091_0, Status : SUCCEEDED
+2018-01-25 03:59:12,750 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000203_0, Status : SUCCEEDED
+2018-01-25 03:59:12,750 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000022_0, Status : SUCCEEDED
+2018-01-25 03:59:13,753 INFO mapreduce.Job:  map 10% reduce 0%
+2018-01-25 03:59:19,783 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000092_0, Status : SUCCEEDED
+2018-01-25 03:59:24,803 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000023_0, Status : SUCCEEDED
+2018-01-25 03:59:24,803 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000204_0, Status : SUCCEEDED
+2018-01-25 03:59:30,826 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000093_0, Status : SUCCEEDED
+2018-01-25 03:59:35,846 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000024_0, Status : SUCCEEDED
+2018-01-25 03:59:36,851 INFO mapreduce.Job:  map 11% reduce 0%
+2018-01-25 03:59:36,852 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000205_0, Status : SUCCEEDED
+2018-01-25 03:59:42,878 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000094_0, Status : SUCCEEDED
+2018-01-25 03:59:47,898 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000025_0, Status : SUCCEEDED
+2018-01-25 03:59:48,902 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000206_0, Status : SUCCEEDED
+2018-01-25 03:59:54,927 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000095_0, Status : SUCCEEDED
+2018-01-25 03:59:55,929 INFO mapreduce.Job:  map 12% reduce 0%
+2018-01-25 03:59:59,946 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000026_0, Status : SUCCEEDED
+2018-01-25 04:00:00,950 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000207_0, Status : SUCCEEDED
+2018-01-25 04:00:06,975 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000096_0, Status : SUCCEEDED
+2018-01-25 04:00:11,996 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000027_0, Status : SUCCEEDED
+2018-01-25 04:00:13,000 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000208_0, Status : SUCCEEDED
+2018-01-25 04:00:14,004 INFO mapreduce.Job:  map 13% reduce 0%
+2018-01-25 04:00:19,026 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000097_0, Status : SUCCEEDED
+2018-01-25 04:00:22,040 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000028_0, Status : SUCCEEDED
+2018-01-25 04:00:24,049 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000212_0, Status : SUCCEEDED
+2018-01-25 04:00:30,074 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000098_0, Status : SUCCEEDED
+2018-01-25 04:00:32,082 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000029_0, Status : SUCCEEDED
+2018-01-25 04:00:33,085 INFO mapreduce.Job:  map 14% reduce 0%
+2018-01-25 04:00:35,094 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000213_0, Status : SUCCEEDED
+2018-01-25 04:00:42,122 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000099_0, Status : SUCCEEDED
+2018-01-25 04:00:42,122 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000030_0, Status : SUCCEEDED
+2018-01-25 04:00:47,142 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000214_0, Status : SUCCEEDED
+2018-01-25 04:00:54,169 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000100_0, Status : SUCCEEDED
+2018-01-25 04:00:54,169 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000031_0, Status : SUCCEEDED
+2018-01-25 04:00:55,172 INFO mapreduce.Job:  map 15% reduce 0%
+2018-01-25 04:00:57,182 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000215_0, Status : SUCCEEDED
+2018-01-25 04:01:05,214 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000032_0, Status : SUCCEEDED
+2018-01-25 04:01:06,219 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000101_0, Status : SUCCEEDED
+2018-01-25 04:01:10,234 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000216_0, Status : SUCCEEDED
+2018-01-25 04:01:11,237 INFO mapreduce.Job:  map 16% reduce 0%
+2018-01-25 04:01:16,258 INFO mapreduce.Job:  map 16% reduce 5%
+2018-01-25 04:01:16,259 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000033_0, Status : SUCCEEDED
+2018-01-25 04:01:17,264 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000102_0, Status : SUCCEEDED
+2018-01-25 04:01:22,284 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000217_0, Status : SUCCEEDED
+2018-01-25 04:01:27,304 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000034_0, Status : SUCCEEDED
+2018-01-25 04:01:29,312 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000103_0, Status : SUCCEEDED
+2018-01-25 04:01:30,314 INFO mapreduce.Job:  map 17% reduce 5%
+2018-01-25 04:01:33,328 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000218_0, Status : SUCCEEDED
+2018-01-25 04:01:34,330 INFO mapreduce.Job:  map 17% reduce 6%
+2018-01-25 04:01:38,347 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000035_0, Status : SUCCEEDED
+2018-01-25 04:01:42,365 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000104_0, Status : SUCCEEDED
+2018-01-25 04:01:44,375 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000219_0, Status : SUCCEEDED
+2018-01-25 04:01:49,395 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000039_0, Status : SUCCEEDED
+2018-01-25 04:01:50,398 INFO mapreduce.Job:  map 18% reduce 6%
+2018-01-25 04:01:53,411 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000105_0, Status : SUCCEEDED
+2018-01-25 04:01:55,419 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000220_0, Status : SUCCEEDED
+2018-01-25 04:02:00,439 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000040_0, Status : SUCCEEDED
+2018-01-25 04:02:05,459 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000106_0, Status : SUCCEEDED
+2018-01-25 04:02:06,463 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000221_0, Status : SUCCEEDED
+2018-01-25 04:02:07,466 INFO mapreduce.Job:  map 19% reduce 6%
+2018-01-25 04:02:10,480 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000041_0, Status : SUCCEEDED
+2018-01-25 04:02:17,509 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000107_0, Status : SUCCEEDED
+2018-01-25 04:02:18,513 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000222_0, Status : SUCCEEDED
+2018-01-25 04:02:21,526 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000042_0, Status : SUCCEEDED
+2018-01-25 04:02:28,556 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000108_0, Status : SUCCEEDED
+2018-01-25 04:02:29,559 INFO mapreduce.Job:  map 20% reduce 6%
+2018-01-25 04:02:30,565 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000223_0, Status : SUCCEEDED
+2018-01-25 04:02:32,574 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000043_0, Status : SUCCEEDED
+2018-01-25 04:02:34,580 INFO mapreduce.Job:  map 20% reduce 7%
+2018-01-25 04:02:40,605 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000109_0, Status : SUCCEEDED
+2018-01-25 04:02:41,609 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000224_0, Status : SUCCEEDED
+2018-01-25 04:02:43,617 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000044_0, Status : SUCCEEDED
+2018-01-25 04:02:44,620 INFO mapreduce.Job:  map 21% reduce 7%
+2018-01-25 04:02:52,655 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000110_0, Status : SUCCEEDED
+2018-01-25 04:02:53,659 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000225_0, Status : SUCCEEDED
+2018-01-25 04:02:55,667 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000045_0, Status : SUCCEEDED
+2018-01-25 04:03:03,700 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000111_0, Status : SUCCEEDED
+2018-01-25 04:03:04,705 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000226_0, Status : SUCCEEDED
+2018-01-25 04:03:05,708 INFO mapreduce.Job:  map 22% reduce 7%
+2018-01-25 04:03:05,710 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000046_0, Status : SUCCEEDED
+2018-01-25 04:03:15,752 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000227_0, Status : SUCCEEDED
+2018-01-25 04:03:15,753 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000112_0, Status : SUCCEEDED
+2018-01-25 04:03:16,757 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000047_0, Status : SUCCEEDED
+2018-01-25 04:03:27,800 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000048_0, Status : SUCCEEDED
+2018-01-25 04:03:27,800 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000113_0, Status : SUCCEEDED
+2018-01-25 04:03:27,801 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000228_0, Status : SUCCEEDED
+2018-01-25 04:03:28,803 INFO mapreduce.Job:  map 23% reduce 7%
+2018-01-25 04:03:34,827 INFO mapreduce.Job:  map 23% reduce 8%
+2018-01-25 04:03:38,844 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000049_0, Status : SUCCEEDED
+2018-01-25 04:03:39,848 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000229_0, Status : SUCCEEDED
+2018-01-25 04:03:40,852 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000114_0, Status : SUCCEEDED
+2018-01-25 04:03:41,855 INFO mapreduce.Job:  map 24% reduce 8%
+2018-01-25 04:03:48,884 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000050_0, Status : SUCCEEDED
+2018-01-25 04:03:50,892 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000230_0, Status : SUCCEEDED
+2018-01-25 04:03:51,896 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000115_0, Status : SUCCEEDED
+2018-01-25 04:04:00,929 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000051_0, Status : SUCCEEDED
+2018-01-25 04:04:02,936 INFO mapreduce.Job:  map 25% reduce 8%
+2018-01-25 04:04:02,937 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000231_0, Status : SUCCEEDED
+2018-01-25 04:04:04,945 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000116_0, Status : SUCCEEDED
+2018-01-25 04:04:10,968 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000052_0, Status : SUCCEEDED
+2018-01-25 04:04:12,977 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000232_0, Status : SUCCEEDED
+2018-01-25 04:04:15,988 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000117_0, Status : SUCCEEDED
+2018-01-25 04:04:22,011 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000053_0, Status : SUCCEEDED
+2018-01-25 04:04:23,016 INFO mapreduce.Job:  map 26% reduce 8%
+2018-01-25 04:04:25,025 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000233_0, Status : SUCCEEDED
+2018-01-25 04:04:28,037 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000118_0, Status : SUCCEEDED
+2018-01-25 04:04:29,040 INFO mapreduce.Job:  map 26% reduce 9%
+2018-01-25 04:04:32,052 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000329_0, Status : SUCCEEDED
+2018-01-25 04:04:35,063 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000234_0, Status : SUCCEEDED
+2018-01-25 04:04:39,079 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000119_0, Status : SUCCEEDED
+2018-01-25 04:04:40,082 INFO mapreduce.Job:  map 27% reduce 9%
+2018-01-25 04:04:43,094 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000330_0, Status : SUCCEEDED
+2018-01-25 04:04:48,113 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000235_0, Status : SUCCEEDED
+2018-01-25 04:04:51,125 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000120_0, Status : SUCCEEDED
+2018-01-25 04:04:54,137 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000331_0, Status : SUCCEEDED
+2018-01-25 04:04:59,156 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000236_0, Status : SUCCEEDED
+2018-01-25 04:05:00,159 INFO mapreduce.Job:  map 28% reduce 9%
+2018-01-25 04:05:02,168 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000121_0, Status : SUCCEEDED
+2018-01-25 04:05:06,183 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000332_0, Status : SUCCEEDED
+2018-01-25 04:05:10,199 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000237_0, Status : SUCCEEDED
+2018-01-25 04:05:14,214 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000122_0, Status : SUCCEEDED
+2018-01-25 04:05:16,222 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000333_0, Status : SUCCEEDED
+2018-01-25 04:05:17,224 INFO mapreduce.Job:  map 29% reduce 9%
+2018-01-25 04:05:21,241 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000238_0, Status : SUCCEEDED
+2018-01-25 04:05:23,247 INFO mapreduce.Job:  map 29% reduce 10%
+2018-01-25 04:05:26,258 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000123_0, Status : SUCCEEDED
+2018-01-25 04:05:27,263 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000334_0, Status : SUCCEEDED
+2018-01-25 04:05:33,330 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000239_0, Status : SUCCEEDED
+2018-01-25 04:05:37,345 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000335_0, Status : SUCCEEDED
+2018-01-25 04:05:38,347 INFO mapreduce.Job:  map 30% reduce 10%
+2018-01-25 04:05:38,349 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000124_0, Status : SUCCEEDED
+2018-01-25 04:05:44,371 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000240_0, Status : SUCCEEDED
+2018-01-25 04:05:48,386 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000336_0, Status : SUCCEEDED
+2018-01-25 04:05:49,390 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000125_0, Status : SUCCEEDED
+2018-01-25 04:05:54,409 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000241_0, Status : SUCCEEDED
+2018-01-25 04:05:55,413 INFO mapreduce.Job:  map 31% reduce 10%
+2018-01-25 04:05:58,425 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000337_0, Status : SUCCEEDED
+2018-01-25 04:06:01,437 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000126_0, Status : SUCCEEDED
+2018-01-25 04:06:06,455 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000245_0, Status : SUCCEEDED
+2018-01-25 04:06:09,467 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000338_0, Status : SUCCEEDED
+2018-01-25 04:06:12,478 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000127_0, Status : SUCCEEDED
+2018-01-25 04:06:13,481 INFO mapreduce.Job:  map 32% reduce 10%
+2018-01-25 04:06:17,495 INFO mapreduce.Job:  map 32% reduce 11%
+2018-01-25 04:06:17,497 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000246_0, Status : SUCCEEDED
+2018-01-25 04:06:20,509 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000339_0, Status : SUCCEEDED
+2018-01-25 04:06:24,524 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000128_0, Status : SUCCEEDED
+2018-01-25 04:06:29,542 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000247_0, Status : SUCCEEDED
+2018-01-25 04:06:31,550 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000340_0, Status : SUCCEEDED
+2018-01-25 04:06:32,552 INFO mapreduce.Job:  map 33% reduce 11%
+2018-01-25 04:06:36,567 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000129_0, Status : SUCCEEDED
+2018-01-25 04:06:39,578 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000248_0, Status : SUCCEEDED
+2018-01-25 04:06:42,589 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000344_0, Status : SUCCEEDED
+2018-01-25 04:06:48,609 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000130_0, Status : SUCCEEDED
+2018-01-25 04:06:51,620 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000249_0, Status : SUCCEEDED
+2018-01-25 04:06:52,622 INFO mapreduce.Job:  map 34% reduce 11%
+2018-01-25 04:06:52,623 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000345_0, Status : SUCCEEDED
+2018-01-25 04:06:59,647 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000131_0, Status : SUCCEEDED
+2018-01-25 04:07:01,655 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000250_0, Status : SUCCEEDED
+2018-01-25 04:07:03,662 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000346_0, Status : SUCCEEDED
+2018-01-25 04:07:11,693 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000132_0, Status : SUCCEEDED
+2018-01-25 04:07:12,696 INFO mapreduce.Job:  map 35% reduce 11%
+2018-01-25 04:07:12,697 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000251_0, Status : SUCCEEDED
+2018-01-25 04:07:14,706 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000347_0, Status : SUCCEEDED
+2018-01-25 04:07:17,716 INFO mapreduce.Job:  map 35% reduce 12%
+2018-01-25 04:07:23,743 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000133_0, Status : SUCCEEDED
+2018-01-25 04:07:24,748 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000252_0, Status : SUCCEEDED
+2018-01-25 04:07:25,752 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000348_0, Status : SUCCEEDED
+2018-01-25 04:07:26,755 INFO mapreduce.Job:  map 36% reduce 12%
+2018-01-25 04:07:34,787 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000349_0, Status : SUCCEEDED
+2018-01-25 04:07:35,792 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000134_0, Status : SUCCEEDED
+2018-01-25 04:07:36,796 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000253_0, Status : SUCCEEDED
+2018-01-25 04:07:45,831 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000350_0, Status : SUCCEEDED
+2018-01-25 04:07:47,839 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000254_0, Status : SUCCEEDED
+2018-01-25 04:07:47,840 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000135_0, Status : SUCCEEDED
+2018-01-25 04:07:48,842 INFO mapreduce.Job:  map 37% reduce 12%
+2018-01-25 04:07:56,879 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000351_0, Status : SUCCEEDED
+2018-01-25 04:07:58,890 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000255_0, Status : SUCCEEDED
+2018-01-25 04:07:59,894 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000136_0, Status : SUCCEEDED
+2018-01-25 04:08:06,924 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000352_0, Status : SUCCEEDED
+2018-01-25 04:08:07,927 INFO mapreduce.Job:  map 38% reduce 12%
+2018-01-25 04:08:10,940 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000256_0, Status : SUCCEEDED
+2018-01-25 04:08:11,943 INFO mapreduce.Job:  map 38% reduce 13%
+2018-01-25 04:08:11,944 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000137_0, Status : SUCCEEDED
+2018-01-25 04:08:17,968 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000353_0, Status : SUCCEEDED
+2018-01-25 04:08:22,992 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000257_0, Status : SUCCEEDED
+2018-01-25 04:08:23,997 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000138_0, Status : SUCCEEDED
+2018-01-25 04:08:25,000 INFO mapreduce.Job:  map 39% reduce 13%
+2018-01-25 04:08:29,016 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000354_0, Status : SUCCEEDED
+2018-01-25 04:08:35,045 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000258_0, Status : SUCCEEDED
+2018-01-25 04:08:36,051 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000139_0, Status : SUCCEEDED
+2018-01-25 04:08:40,067 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000355_0, Status : SUCCEEDED
+2018-01-25 04:08:46,091 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000259_0, Status : SUCCEEDED
+2018-01-25 04:08:47,093 INFO mapreduce.Job:  map 40% reduce 13%
+2018-01-25 04:08:48,099 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000140_0, Status : SUCCEEDED
+2018-01-25 04:08:50,107 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000356_0, Status : SUCCEEDED
+2018-01-25 04:08:58,139 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000260_0, Status : SUCCEEDED
+2018-01-25 04:09:00,147 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000141_0, Status : SUCCEEDED
+2018-01-25 04:09:01,151 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000357_0, Status : SUCCEEDED
+2018-01-25 04:09:02,154 INFO mapreduce.Job:  map 41% reduce 13%
+2018-01-25 04:09:06,169 INFO mapreduce.Job:  map 41% reduce 14%
+2018-01-25 04:09:09,181 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000261_0, Status : SUCCEEDED
+2018-01-25 04:09:11,189 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000358_0, Status : SUCCEEDED
+2018-01-25 04:09:12,193 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000142_0, Status : SUCCEEDED
+2018-01-25 04:09:21,226 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000262_0, Status : SUCCEEDED
+2018-01-25 04:09:22,231 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000359_0, Status : SUCCEEDED
+2018-01-25 04:09:23,233 INFO mapreduce.Job:  map 42% reduce 14%
+2018-01-25 04:09:24,239 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000143_0, Status : SUCCEEDED
+2018-01-25 04:09:32,280 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000263_0, Status : SUCCEEDED
+2018-01-25 04:09:33,285 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000360_0, Status : SUCCEEDED
+2018-01-25 04:09:35,292 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000144_0, Status : SUCCEEDED
+2018-01-25 04:09:43,320 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000264_0, Status : SUCCEEDED
+2018-01-25 04:09:43,320 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000361_0, Status : SUCCEEDED
+2018-01-25 04:09:44,322 INFO mapreduce.Job:  map 43% reduce 14%
+2018-01-25 04:09:47,334 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000145_0, Status : SUCCEEDED
+2018-01-25 04:09:55,363 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000265_0, Status : SUCCEEDED
+2018-01-25 04:09:55,364 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000362_0, Status : SUCCEEDED
+2018-01-25 04:09:59,378 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000146_0, Status : SUCCEEDED
+2018-01-25 04:10:00,381 INFO mapreduce.Job:  map 44% reduce 14%
+2018-01-25 04:10:06,407 INFO mapreduce.Job:  map 44% reduce 15%
+2018-01-25 04:10:06,408 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000363_0, Status : SUCCEEDED
+2018-01-25 04:10:07,412 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000266_0, Status : SUCCEEDED
+2018-01-25 04:10:11,429 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000147_0, Status : SUCCEEDED
+2018-01-25 04:10:16,451 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000364_0, Status : SUCCEEDED
+2018-01-25 04:10:18,458 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000267_0, Status : SUCCEEDED
+2018-01-25 04:10:19,461 INFO mapreduce.Job:  map 45% reduce 15%
+2018-01-25 04:10:22,474 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000148_0, Status : SUCCEEDED
+2018-01-25 04:10:27,494 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000365_0, Status : SUCCEEDED
+2018-01-25 04:10:29,502 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000268_0, Status : SUCCEEDED
+2018-01-25 04:10:34,520 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000149_0, Status : SUCCEEDED
+2018-01-25 04:10:38,535 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000366_0, Status : SUCCEEDED
+2018-01-25 04:10:39,537 INFO mapreduce.Job:  map 46% reduce 15%
+2018-01-25 04:10:39,538 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000269_0, Status : SUCCEEDED
+2018-01-25 04:10:45,559 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000150_0, Status : SUCCEEDED
+2018-01-25 04:10:50,577 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000367_0, Status : SUCCEEDED
+2018-01-25 04:10:52,584 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000270_0, Status : SUCCEEDED
+2018-01-25 04:10:57,601 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000151_0, Status : SUCCEEDED
+2018-01-25 04:10:58,604 INFO mapreduce.Job:  map 47% reduce 15%
+2018-01-25 04:11:00,611 INFO mapreduce.Job:  map 47% reduce 16%
+2018-01-25 04:11:01,616 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000368_0, Status : SUCCEEDED
+2018-01-25 04:11:04,627 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000271_0, Status : SUCCEEDED
+2018-01-25 04:11:09,645 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000176_0, Status : SUCCEEDED
+2018-01-25 04:11:12,658 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000369_0, Status : SUCCEEDED
+2018-01-25 04:11:16,674 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000272_0, Status : SUCCEEDED
+2018-01-25 04:11:17,676 INFO mapreduce.Job:  map 48% reduce 16%
+2018-01-25 04:11:20,687 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000177_0, Status : SUCCEEDED
+2018-01-25 04:11:22,695 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000370_0, Status : SUCCEEDED
+2018-01-25 04:11:27,712 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000273_0, Status : SUCCEEDED
+2018-01-25 04:11:32,730 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000178_0, Status : SUCCEEDED
+2018-01-25 04:11:33,734 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000371_0, Status : SUCCEEDED
+2018-01-25 04:11:34,736 INFO mapreduce.Job:  map 49% reduce 16%
+2018-01-25 04:11:38,751 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000274_0, Status : SUCCEEDED
+2018-01-25 04:11:43,770 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000372_0, Status : SUCCEEDED
+2018-01-25 04:11:44,775 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000209_0, Status : SUCCEEDED
+2018-01-25 04:11:50,795 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000278_0, Status : SUCCEEDED
+2018-01-25 04:11:54,810 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000373_0, Status : SUCCEEDED
+2018-01-25 04:11:55,812 INFO mapreduce.Job:  map 50% reduce 16%
+2018-01-25 04:11:56,817 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000210_0, Status : SUCCEEDED
+2018-01-25 04:12:00,831 INFO mapreduce.Job:  map 50% reduce 17%
+2018-01-25 04:12:01,836 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000279_0, Status : SUCCEEDED
+2018-01-25 04:12:03,843 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000375_0, Status : SUCCEEDED
+2018-01-25 04:12:08,863 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000211_0, Status : SUCCEEDED
+2018-01-25 04:12:09,865 INFO mapreduce.Job:  map 51% reduce 17%
+2018-01-25 04:12:12,877 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000280_0, Status : SUCCEEDED
+2018-01-25 04:12:13,880 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000376_0, Status : SUCCEEDED
+2018-01-25 04:12:19,900 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000242_0, Status : SUCCEEDED
+2018-01-25 04:12:22,911 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000378_0, Status : SUCCEEDED
+2018-01-25 04:12:24,919 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000281_0, Status : SUCCEEDED
+2018-01-25 04:12:25,922 INFO mapreduce.Job:  map 52% reduce 17%
+2018-01-25 04:12:30,940 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000243_0, Status : SUCCEEDED
+2018-01-25 04:12:32,946 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000380_0, Status : SUCCEEDED
+2018-01-25 04:12:36,960 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000282_0, Status : SUCCEEDED
+2018-01-25 04:12:41,976 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000382_0, Status : SUCCEEDED
+2018-01-25 04:12:42,980 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000244_0, Status : SUCCEEDED
+2018-01-25 04:12:43,983 INFO mapreduce.Job:  map 53% reduce 17%
+2018-01-25 04:12:49,002 INFO mapreduce.Job:  map 53% reduce 18%
+2018-01-25 04:12:50,008 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000283_0, Status : SUCCEEDED
+2018-01-25 04:12:52,015 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000383_0, Status : SUCCEEDED
+2018-01-25 04:12:55,026 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000275_0, Status : SUCCEEDED
+2018-01-25 04:13:02,052 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000284_0, Status : SUCCEEDED
+2018-01-25 04:13:03,055 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000385_0, Status : SUCCEEDED
+2018-01-25 04:13:04,058 INFO mapreduce.Job:  map 54% reduce 18%
+2018-01-25 04:13:07,069 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000276_0, Status : SUCCEEDED
+2018-01-25 04:13:13,090 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000387_0, Status : SUCCEEDED
+2018-01-25 04:13:14,095 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000285_0, Status : SUCCEEDED
+2018-01-25 04:13:19,112 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000277_0, Status : SUCCEEDED
+2018-01-25 04:13:21,120 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000392_0, Status : SUCCEEDED
+2018-01-25 04:13:22,123 INFO mapreduce.Job:  map 55% reduce 18%
+2018-01-25 04:13:25,136 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000286_0, Status : SUCCEEDED
+2018-01-25 04:13:31,156 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000308_0, Status : SUCCEEDED
+2018-01-25 04:13:32,160 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000397_0, Status : SUCCEEDED
+2018-01-25 04:13:38,180 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000287_0, Status : SUCCEEDED
+2018-01-25 04:13:42,194 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000398_0, Status : SUCCEEDED
+2018-01-25 04:13:42,195 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000309_0, Status : SUCCEEDED
+2018-01-25 04:13:43,197 INFO mapreduce.Job:  map 56% reduce 18%
+2018-01-25 04:13:49,217 INFO mapreduce.Job:  map 56% reduce 19%
+2018-01-25 04:13:49,219 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000288_0, Status : SUCCEEDED
+2018-01-25 04:13:51,227 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000399_0, Status : SUCCEEDED
+2018-01-25 04:13:54,238 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000310_0, Status : SUCCEEDED
+2018-01-25 04:14:01,264 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000289_0, Status : SUCCEEDED
+2018-01-25 04:14:01,264 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000400_0, Status : SUCCEEDED
+2018-01-25 04:14:02,266 INFO mapreduce.Job:  map 57% reduce 19%
+2018-01-25 04:14:06,282 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000341_0, Status : SUCCEEDED
+2018-01-25 04:14:11,300 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000402_0, Status : SUCCEEDED
+2018-01-25 04:14:13,307 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000290_0, Status : SUCCEEDED
+2018-01-25 04:14:19,328 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000342_0, Status : SUCCEEDED
+2018-01-25 04:14:20,331 INFO mapreduce.Job:  map 58% reduce 19%
+2018-01-25 04:14:20,332 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000405_0, Status : SUCCEEDED
+2018-01-25 04:14:24,346 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000291_0, Status : SUCCEEDED
+2018-01-25 04:14:31,370 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000407_0, Status : SUCCEEDED
+2018-01-25 04:14:31,370 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000343_0, Status : SUCCEEDED
+2018-01-25 04:14:36,388 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000292_0, Status : SUCCEEDED
+2018-01-25 04:14:37,391 INFO mapreduce.Job:  map 59% reduce 19%
+2018-01-25 04:14:40,402 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000408_0, Status : SUCCEEDED
+2018-01-25 04:14:41,407 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000451_0, Status : SUCCEEDED
+2018-01-25 04:14:43,413 INFO mapreduce.Job:  map 59% reduce 20%
+2018-01-25 04:14:47,427 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000384_0, Status : SUCCEEDED
+2018-01-25 04:14:50,437 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000410_0, Status : SUCCEEDED
+2018-01-25 04:14:51,441 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000452_0, Status : SUCCEEDED
+2018-01-25 04:14:52,443 INFO mapreduce.Job:  map 60% reduce 20%
+2018-01-25 04:14:58,464 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000386_0, Status : SUCCEEDED
+2018-01-25 04:15:00,471 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000417_0, Status : SUCCEEDED
+2018-01-25 04:15:01,474 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000453_0, Status : SUCCEEDED
+2018-01-25 04:15:08,497 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000388_0, Status : SUCCEEDED
+2018-01-25 04:15:10,504 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000420_0, Status : SUCCEEDED
+2018-01-25 04:15:11,506 INFO mapreduce.Job:  map 61% reduce 20%
+2018-01-25 04:15:11,508 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000454_0, Status : SUCCEEDED
+2018-01-25 04:15:19,538 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000423_0, Status : SUCCEEDED
+2018-01-25 04:15:19,538 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000393_0, Status : SUCCEEDED
+2018-01-25 04:15:22,549 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000456_0, Status : SUCCEEDED
+2018-01-25 04:15:28,572 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000425_0, Status : SUCCEEDED
+2018-01-25 04:15:29,575 INFO mapreduce.Job:  map 62% reduce 20%
+2018-01-25 04:15:31,582 INFO mapreduce.Job:  map 62% reduce 21%
+2018-01-25 04:15:31,584 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000394_0, Status : SUCCEEDED
+2018-01-25 04:15:32,588 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000457_0, Status : SUCCEEDED
+2018-01-25 04:15:38,611 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000427_0, Status : SUCCEEDED
+2018-01-25 04:15:41,624 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000395_0, Status : SUCCEEDED
+2018-01-25 04:15:42,628 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000458_0, Status : SUCCEEDED
+2018-01-25 04:15:43,631 INFO mapreduce.Job:  map 63% reduce 21%
+2018-01-25 04:15:48,650 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000430_0, Status : SUCCEEDED
+2018-01-25 04:15:52,665 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000459_0, Status : SUCCEEDED
+2018-01-25 04:15:52,667 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000401_0, Status : SUCCEEDED
+2018-01-25 04:15:57,693 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000431_0, Status : SUCCEEDED
+2018-01-25 04:16:02,710 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000464_0, Status : SUCCEEDED
+2018-01-25 04:16:03,713 INFO mapreduce.Job:  map 64% reduce 21%
+2018-01-25 04:16:03,714 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000403_0, Status : SUCCEEDED
+2018-01-25 04:16:07,727 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000435_0, Status : SUCCEEDED
+2018-01-25 04:16:13,747 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000466_0, Status : SUCCEEDED
+2018-01-25 04:16:14,751 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000406_0, Status : SUCCEEDED
+2018-01-25 04:16:16,758 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000436_0, Status : SUCCEEDED
+2018-01-25 04:16:17,760 INFO mapreduce.Job:  map 65% reduce 21%
+2018-01-25 04:16:19,767 INFO mapreduce.Job:  map 65% reduce 22%
+2018-01-25 04:16:24,785 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000409_0, Status : SUCCEEDED
+2018-01-25 04:16:25,789 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000469_0, Status : SUCCEEDED
+2018-01-25 04:16:26,793 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000439_0, Status : SUCCEEDED
+2018-01-25 04:16:34,820 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000411_0, Status : SUCCEEDED
+2018-01-25 04:16:35,824 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000470_0, Status : SUCCEEDED
+2018-01-25 04:16:36,837 INFO mapreduce.Job:  map 66% reduce 22%
+2018-01-25 04:16:36,839 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000443_0, Status : SUCCEEDED
+2018-01-25 04:16:45,871 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000414_0, Status : SUCCEEDED
+2018-01-25 04:16:45,871 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000471_0, Status : SUCCEEDED
+2018-01-25 04:16:50,888 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000054_0, Status : SUCCEEDED
+2018-01-25 04:16:56,911 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000472_0, Status : SUCCEEDED
+2018-01-25 04:16:56,911 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000415_0, Status : SUCCEEDED
+2018-01-25 04:16:57,914 INFO mapreduce.Job:  map 67% reduce 22%
+2018-01-25 04:17:02,931 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000055_0, Status : SUCCEEDED
+2018-01-25 04:17:06,946 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000473_0, Status : SUCCEEDED
+2018-01-25 04:17:06,946 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000418_0, Status : SUCCEEDED
+2018-01-25 04:17:14,972 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000056_0, Status : SUCCEEDED
+2018-01-25 04:17:15,974 INFO mapreduce.Job:  map 68% reduce 22%
+2018-01-25 04:17:16,980 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000474_0, Status : SUCCEEDED
+2018-01-25 04:17:18,989 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000419_0, Status : SUCCEEDED
+2018-01-25 04:17:19,991 INFO mapreduce.Job:  map 68% reduce 23%
+2018-01-25 04:17:27,020 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000476_0, Status : SUCCEEDED
+2018-01-25 04:17:28,024 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000057_0, Status : SUCCEEDED
+2018-01-25 04:17:29,027 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000422_0, Status : SUCCEEDED
+2018-01-25 04:17:30,029 INFO mapreduce.Job:  map 69% reduce 23%
+2018-01-25 04:17:37,053 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000478_0, Status : SUCCEEDED
+2018-01-25 04:17:39,061 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000432_0, Status : SUCCEEDED
+2018-01-25 04:17:44,077 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000058_0, Status : SUCCEEDED
+2018-01-25 04:17:47,087 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000479_0, Status : SUCCEEDED
+2018-01-25 04:17:49,093 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000433_0, Status : SUCCEEDED
+2018-01-25 04:17:50,096 INFO mapreduce.Job:  map 70% reduce 23%
+2018-01-25 04:17:55,113 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000059_0, Status : SUCCEEDED
+2018-01-25 04:17:57,120 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000480_0, Status : SUCCEEDED
+2018-01-25 04:17:59,126 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000437_0, Status : SUCCEEDED
+2018-01-25 04:18:07,151 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000481_0, Status : SUCCEEDED
+2018-01-25 04:18:08,155 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000060_0, Status : SUCCEEDED
+2018-01-25 04:18:09,157 INFO mapreduce.Job:  map 71% reduce 23%
+2018-01-25 04:18:10,161 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000438_0, Status : SUCCEEDED
+2018-01-25 04:18:14,174 INFO mapreduce.Job:  map 71% reduce 24%
+2018-01-25 04:18:17,186 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000483_0, Status : SUCCEEDED
+2018-01-25 04:18:21,199 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000441_0, Status : SUCCEEDED
+2018-01-25 04:18:24,209 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000061_0, Status : SUCCEEDED
+2018-01-25 04:18:27,219 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000489_0, Status : SUCCEEDED
+2018-01-25 04:18:28,222 INFO mapreduce.Job:  map 72% reduce 24%
+2018-01-25 04:18:32,238 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000442_0, Status : SUCCEEDED
+2018-01-25 04:18:37,254 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000062_0, Status : SUCCEEDED
+2018-01-25 04:18:37,254 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000490_0, Status : SUCCEEDED
+2018-01-25 04:18:43,273 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000444_0, Status : SUCCEEDED
+2018-01-25 04:18:48,288 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000491_0, Status : SUCCEEDED
+2018-01-25 04:18:49,291 INFO mapreduce.Job:  map 73% reduce 24%
+2018-01-25 04:18:49,292 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000063_0, Status : SUCCEEDED
+2018-01-25 04:18:54,309 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000446_0, Status : SUCCEEDED
+2018-01-25 04:18:58,322 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000492_0, Status : SUCCEEDED
+2018-01-25 04:19:04,342 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000064_0, Status : SUCCEEDED
+2018-01-25 04:19:05,346 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000447_0, Status : SUCCEEDED
+2018-01-25 04:19:06,349 INFO mapreduce.Job:  map 74% reduce 24%
+2018-01-25 04:19:08,355 INFO mapreduce.Job:  map 74% reduce 25%
+2018-01-25 04:19:08,357 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000493_0, Status : SUCCEEDED
+2018-01-25 04:19:16,382 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000449_0, Status : SUCCEEDED
+2018-01-25 04:19:16,383 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000065_0, Status : SUCCEEDED
+2018-01-25 04:19:19,392 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000494_0, Status : SUCCEEDED
+2018-01-25 04:19:27,417 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000450_0, Status : SUCCEEDED
+2018-01-25 04:19:28,419 INFO mapreduce.Job:  map 75% reduce 25%
+2018-01-25 04:19:29,423 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000495_0, Status : SUCCEEDED
+2018-01-25 04:19:34,439 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000066_0, Status : SUCCEEDED
+2018-01-25 04:19:38,452 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000455_0, Status : SUCCEEDED
+2018-01-25 04:19:38,452 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000496_0, Status : SUCCEEDED
+2018-01-25 04:19:46,479 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000067_0, Status : SUCCEEDED
+2018-01-25 04:19:47,481 INFO mapreduce.Job:  map 76% reduce 25%
+2018-01-25 04:19:49,489 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000460_0, Status : SUCCEEDED
+2018-01-25 04:19:49,489 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000497_0, Status : SUCCEEDED
+2018-01-25 04:19:58,517 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000068_0, Status : SUCCEEDED
+2018-01-25 04:19:59,521 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000482_0, Status : SUCCEEDED
+2018-01-25 04:20:05,539 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000072_0, Status : SUCCEEDED
+2018-01-25 04:20:06,542 INFO mapreduce.Job:  map 77% reduce 25%
+2018-01-25 04:20:08,548 INFO mapreduce.Job:  map 77% reduce 26%
+2018-01-25 04:20:09,552 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000486_0, Status : SUCCEEDED
+2018-01-25 04:20:11,560 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000073_0, Status : SUCCEEDED
+2018-01-25 04:20:18,582 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000074_0, Status : SUCCEEDED
+2018-01-25 04:20:20,589 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000487_0, Status : SUCCEEDED
+2018-01-25 04:20:27,611 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000075_0, Status : SUCCEEDED
+2018-01-25 04:20:28,614 INFO mapreduce.Job:  map 78% reduce 26%
+2018-01-25 04:20:31,624 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000076_0, Status : SUCCEEDED
+2018-01-25 04:20:37,641 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000077_0, Status : SUCCEEDED
+2018-01-25 04:20:39,647 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000078_0, Status : SUCCEEDED
+2018-01-25 04:20:43,660 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000079_0, Status : SUCCEEDED
+2018-01-25 04:20:50,681 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000080_0, Status : SUCCEEDED
+2018-01-25 04:20:51,683 INFO mapreduce.Job:  map 79% reduce 26%
+2018-01-25 04:20:54,693 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000081_0, Status : SUCCEEDED
+2018-01-25 04:20:58,706 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000082_0, Status : SUCCEEDED
+2018-01-25 04:21:02,719 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000083_0, Status : SUCCEEDED
+2018-01-25 04:21:07,734 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000084_0, Status : SUCCEEDED
+2018-01-25 04:21:10,744 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000085_0, Status : SUCCEEDED
+2018-01-25 04:21:11,746 INFO mapreduce.Job:  map 80% reduce 26%
+2018-01-25 04:21:14,755 INFO mapreduce.Job:  map 80% reduce 27%
+2018-01-25 04:21:14,756 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000086_0, Status : SUCCEEDED
+2018-01-25 04:21:19,771 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000087_0, Status : SUCCEEDED
+2018-01-25 04:21:26,792 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000088_0, Status : SUCCEEDED
+2018-01-25 04:21:30,805 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000152_0, Status : SUCCEEDED
+2018-01-25 04:21:33,814 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000153_0, Status : SUCCEEDED
+2018-01-25 04:21:34,816 INFO mapreduce.Job:  map 81% reduce 27%
+2018-01-25 04:21:39,833 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000154_0, Status : SUCCEEDED
+2018-01-25 04:21:45,850 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000155_0, Status : SUCCEEDED
+2018-01-25 04:21:49,861 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000156_0, Status : SUCCEEDED
+2018-01-25 04:21:53,873 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000157_0, Status : SUCCEEDED
+2018-01-25 04:22:02,898 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000158_0, Status : SUCCEEDED
+2018-01-25 04:22:03,900 INFO mapreduce.Job:  map 82% reduce 27%
+2018-01-25 04:22:03,901 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000159_0, Status : SUCCEEDED
+2018-01-25 04:22:10,923 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000160_0, Status : SUCCEEDED
+2018-01-25 04:22:14,934 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000161_0, Status : SUCCEEDED
+2018-01-25 04:22:19,949 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000162_0, Status : SUCCEEDED
+2018-01-25 04:22:23,961 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000163_0, Status : SUCCEEDED
+2018-01-25 04:22:24,963 INFO mapreduce.Job:  map 83% reduce 27%
+2018-01-25 04:22:26,969 INFO mapreduce.Job:  map 83% reduce 28%
+2018-01-25 04:22:26,970 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000164_0, Status : SUCCEEDED
+2018-01-25 04:22:32,989 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000165_0, Status : SUCCEEDED
+2018-01-25 04:22:38,005 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000166_0, Status : SUCCEEDED
+2018-01-25 04:22:42,018 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000167_0, Status : SUCCEEDED
+2018-01-25 04:22:48,037 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000168_0, Status : SUCCEEDED
+2018-01-25 04:22:49,039 INFO mapreduce.Job:  map 84% reduce 28%
+2018-01-25 04:22:53,055 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000169_0, Status : SUCCEEDED
+2018-01-25 04:22:58,071 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000170_0, Status : SUCCEEDED
+2018-01-25 04:23:03,086 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000171_0, Status : SUCCEEDED
+2018-01-25 04:23:09,104 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000172_0, Status : SUCCEEDED
+2018-01-25 04:23:13,116 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000173_0, Status : SUCCEEDED
+2018-01-25 04:23:14,118 INFO mapreduce.Job:  map 85% reduce 28%
+2018-01-25 04:23:19,140 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000174_0, Status : SUCCEEDED
+2018-01-25 04:23:24,155 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000175_0, Status : SUCCEEDED
+2018-01-25 04:23:29,170 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000179_0, Status : SUCCEEDED
+2018-01-25 04:23:34,184 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000180_0, Status : SUCCEEDED
+2018-01-25 04:23:40,203 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000181_0, Status : SUCCEEDED
+2018-01-25 04:23:41,205 INFO mapreduce.Job:  map 86% reduce 28%
+2018-01-25 04:23:45,216 INFO mapreduce.Job:  map 86% reduce 29%
+2018-01-25 04:23:45,218 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000182_0, Status : SUCCEEDED
+2018-01-25 04:23:50,232 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000183_0, Status : SUCCEEDED
+2018-01-25 04:23:56,250 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000184_0, Status : SUCCEEDED
+2018-01-25 04:24:01,265 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000185_0, Status : SUCCEEDED
+2018-01-25 04:24:06,279 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000186_0, Status : SUCCEEDED
+2018-01-25 04:24:07,281 INFO mapreduce.Job:  map 87% reduce 29%
+2018-01-25 04:24:11,294 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000187_0, Status : SUCCEEDED
+2018-01-25 04:24:17,311 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000293_0, Status : SUCCEEDED
+2018-01-25 04:24:21,322 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000294_0, Status : SUCCEEDED
+2018-01-25 04:24:27,339 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000295_0, Status : SUCCEEDED
+2018-01-25 04:24:31,352 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000296_0, Status : SUCCEEDED
+2018-01-25 04:24:32,354 INFO mapreduce.Job:  map 88% reduce 29%
+2018-01-25 04:24:34,361 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000297_0, Status : SUCCEEDED
+2018-01-25 04:24:40,379 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000298_0, Status : SUCCEEDED
+2018-01-25 04:24:45,394 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000299_0, Status : SUCCEEDED
+2018-01-25 04:24:48,402 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000300_0, Status : SUCCEEDED
+2018-01-25 04:24:53,418 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000301_0, Status : SUCCEEDED
+2018-01-25 04:24:54,420 INFO mapreduce.Job:  map 89% reduce 29%
+2018-01-25 04:24:57,429 INFO mapreduce.Job:  map 89% reduce 30%
+2018-01-25 04:24:57,430 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000302_0, Status : SUCCEEDED
+2018-01-25 04:25:03,449 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000303_0, Status : SUCCEEDED
+2018-01-25 04:25:09,467 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000304_0, Status : SUCCEEDED
+2018-01-25 04:25:11,473 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000305_0, Status : SUCCEEDED
+2018-01-25 04:25:18,494 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000306_0, Status : SUCCEEDED
+2018-01-25 04:25:19,496 INFO mapreduce.Job:  map 90% reduce 30%
+2018-01-25 04:25:24,512 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000307_0, Status : SUCCEEDED
+2018-01-25 04:25:26,518 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000311_0, Status : SUCCEEDED
+2018-01-25 04:25:30,532 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000312_0, Status : SUCCEEDED
+2018-01-25 04:25:36,550 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000313_0, Status : SUCCEEDED
+2018-01-25 04:25:41,566 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000314_0, Status : SUCCEEDED
+2018-01-25 04:25:42,568 INFO mapreduce.Job:  map 91% reduce 30%
+2018-01-25 04:25:46,580 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000315_0, Status : SUCCEEDED
+2018-01-25 04:25:52,597 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000316_0, Status : SUCCEEDED
+2018-01-25 04:25:57,613 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000317_0, Status : SUCCEEDED
+2018-01-25 04:26:00,622 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000318_0, Status : SUCCEEDED
+2018-01-25 04:26:07,641 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000319_0, Status : SUCCEEDED
+2018-01-25 04:26:08,643 INFO mapreduce.Job:  map 92% reduce 30%
+2018-01-25 04:26:09,645 INFO mapreduce.Job:  map 92% reduce 31%
+2018-01-25 04:26:12,654 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000320_0, Status : SUCCEEDED
+2018-01-25 04:26:16,666 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000321_0, Status : SUCCEEDED
+2018-01-25 04:26:22,684 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000322_0, Status : SUCCEEDED
+2018-01-25 04:26:28,702 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000323_0, Status : SUCCEEDED
+2018-01-25 04:26:33,716 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000324_0, Status : SUCCEEDED
+2018-01-25 04:26:34,718 INFO mapreduce.Job:  map 93% reduce 31%
+2018-01-25 04:26:36,724 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000325_0, Status : SUCCEEDED
+2018-01-25 04:26:41,738 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000326_0, Status : SUCCEEDED
+2018-01-25 04:26:45,750 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000327_0, Status : SUCCEEDED
+2018-01-25 04:26:51,766 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000328_0, Status : SUCCEEDED
+2018-01-25 04:26:56,780 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000374_0, Status : SUCCEEDED
+2018-01-25 04:26:57,782 INFO mapreduce.Job:  map 94% reduce 31%
+2018-01-25 04:27:00,791 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000377_0, Status : SUCCEEDED
+2018-01-25 04:27:06,807 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000379_0, Status : SUCCEEDED
+2018-01-25 04:27:11,821 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000381_0, Status : SUCCEEDED
+2018-01-25 04:27:15,832 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000389_0, Status : SUCCEEDED
+2018-01-25 04:27:19,843 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000390_0, Status : SUCCEEDED
+2018-01-25 04:27:20,845 INFO mapreduce.Job:  map 95% reduce 31%
+2018-01-25 04:27:21,848 INFO mapreduce.Job:  map 95% reduce 32%
+2018-01-25 04:27:25,860 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000391_0, Status : SUCCEEDED
+2018-01-25 04:27:29,872 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000396_0, Status : SUCCEEDED
+2018-01-25 04:27:33,883 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000404_0, Status : SUCCEEDED
+2018-01-25 04:27:39,899 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000412_0, Status : SUCCEEDED
+2018-01-25 04:27:43,910 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000413_0, Status : SUCCEEDED
+2018-01-25 04:27:44,912 INFO mapreduce.Job:  map 96% reduce 32%
+2018-01-25 04:27:46,919 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000416_0, Status : SUCCEEDED
+2018-01-25 04:27:52,935 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000421_0, Status : SUCCEEDED
+2018-01-25 04:27:57,949 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000424_0, Status : SUCCEEDED
+2018-01-25 04:28:00,956 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000426_0, Status : SUCCEEDED
+2018-01-25 04:28:03,964 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000428_0, Status : SUCCEEDED
+2018-01-25 04:28:04,966 INFO mapreduce.Job:  map 97% reduce 32%
+2018-01-25 04:28:07,975 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000429_0, Status : SUCCEEDED
+2018-01-25 04:28:15,997 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000434_0, Status : SUCCEEDED
+2018-01-25 04:28:19,006 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000440_0, Status : SUCCEEDED
+2018-01-25 04:28:23,017 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000445_0, Status : SUCCEEDED
+2018-01-25 04:28:28,031 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000448_0, Status : SUCCEEDED
+2018-01-25 04:28:29,033 INFO mapreduce.Job:  map 98% reduce 32%
+2018-01-25 04:28:34,046 INFO mapreduce.Job:  map 98% reduce 33%
+2018-01-25 04:28:34,047 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000461_0, Status : SUCCEEDED
+2018-01-25 04:28:36,053 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000462_0, Status : SUCCEEDED
+2018-01-25 04:28:42,070 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000463_0, Status : SUCCEEDED
+2018-01-25 04:28:48,086 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000465_0, Status : SUCCEEDED
+2018-01-25 04:28:49,088 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000467_0, Status : SUCCEEDED
+2018-01-25 04:28:50,090 INFO mapreduce.Job:  map 99% reduce 33%
+2018-01-25 04:28:53,099 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000468_0, Status : SUCCEEDED
+2018-01-25 04:28:59,114 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000475_0, Status : SUCCEEDED
+2018-01-25 04:29:03,126 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000477_0, Status : SUCCEEDED
+2018-01-25 04:29:07,137 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000484_0, Status : SUCCEEDED
+2018-01-25 04:29:09,143 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000485_0, Status : SUCCEEDED
+2018-01-25 04:29:10,145 INFO mapreduce.Job:  map 100% reduce 33%
+2018-01-25 04:29:13,155 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000488_0, Status : SUCCEEDED
+2018-01-25 04:29:17,166 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_m_000498_0, Status : SUCCEEDED
+2018-01-25 04:29:18,169 INFO mapreduce.Job: Task Id : attempt_1516851641598_0011_r_000000_0, Status : SUCCEEDED
+2018-01-25 04:29:19,171 INFO mapreduce.Job:  map 100% reduce 100%
+2018-01-25 04:29:21,182 INFO mapreduce.Job: Job job_1516851641598_0011 completed successfully
+2018-01-25 04:29:21,351 INFO mapreduce.Job: Counters: 55
+        File System Counters
+                FILE: Number of bytes read=7398
+                FILE: Number of bytes written=103159117
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=126125250166
+                HDFS: Number of bytes written=616
+                HDFS: Number of read operations=1502
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Killed map tasks=1
+                Launched map tasks=499
+                Launched reduce tasks=1
+                Data-local map tasks=368
+                Rack-local map tasks=131
+                Total time spent by all maps in occupied slots (ms)=4276021568
+                Total time spent by all reduces in occupied slots (ms)=326007168
+                Total time spent by all map tasks (ms)=5139449
+                Total time spent by all reduce tasks (ms)=1697954
+                Total vcore-milliseconds taken by all map tasks=82231184
+                Total vcore-milliseconds taken by all reduce tasks=13583632
+                Total megabyte-milliseconds taken by all map tasks=68416345088
+                Total megabyte-milliseconds taken by all reduce tasks=5216114688
+        Map-Reduce Framework
+                Map input records=1246539221
+                Map output records=1246539221
+                Map output bytes=14958470652
+                Map output materialized bytes=10386
+                Input split bytes=61943
+                Combine input records=1246539221
+                Combine output records=528
+                Reduce input groups=30
+                Reduce shuffle bytes=10386
+                Reduce input records=528
+                Reduce output records=30
+                Spilled Records=1056
+                Shuffled Maps =499
+                Failed Shuffles=0
+                Merged Map outputs=499
+                GC time elapsed (ms)=99206
+                CPU time spent (ms)=5780360
+                Physical memory (bytes) snapshot=262295859200
+                Virtual memory (bytes) snapshot=1322354728960
+                Total committed heap usage (bytes)=244744978432
+                Peak Map Physical memory (bytes)=633155584
+                Peak Map Virtual memory (bytes)=2659094528
+                Peak Reduce Physical memory (bytes)=307027968
+                Peak Reduce Virtual memory (bytes)=2658078720
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=126125188223
+        File Output Format Counters 
+                Bytes Written=616
+
+real    33m32.791s
+user    0m25.723s
+sys     0m4.071s

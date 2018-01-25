@@ -23,7 +23,6 @@
         <value>1</value>
     </property>
 
-
     <property>
         <name>dfs.replication.max</name>
         <value>10</value>
@@ -33,7 +32,6 @@
         <name>dfs.storage.policy.enabled</name>
         <value>false</value>
     </property>
-
 
     <property>
         <name>dfs.replication.min</name>
@@ -50,5 +48,14 @@
         <value>8</value>
     </property>
 
+<!--    <property>
+        <name>dfs.block.access.token.enable</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>dfs.block.access.token.protobuf.enable</name>
+        <value>true</value>
+    </property>-->
 
 </configuration>
